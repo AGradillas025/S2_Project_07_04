@@ -20,16 +20,23 @@
 
 /* Html Styles */
 html {
-    background-color: aqua;
+    background-color: rgb(203, 176, 160);
+    background-image: url(jb_back1.png);
+    background-repeat: round;
+    background-attachment: fixed;
 }
 
 /* Body Styles */
 body {
+    background-color: rgb(205, 232, 255);
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
     min-width: 640px;
     width: 95%;
+    border-style: double;
+    border-width: 5px;
+    box-shadow: black 10px 0px 45px;
 }
 
 body>header>img {
@@ -38,18 +45,51 @@ body>header>img {
 }
 
 /* Navigation Styles */
+.horizontal ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+nav.horizontal {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+nav.horizontal ul {
+    text-align: center;
+}
+
 nav.horizontal ul li {
-    background-color: aquamarine;
+    background-color: rgb(128, 199, 240);
+    text-decoration: none;
     display: block;
     font-size: 15px;
     float: left;
     line-height: 30px;
-    height: 40px;
-    margin-bottom: 10px;
-    padding-left: 50px;
-    width: 100px;
+    height: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    width: 16.66%;
+}
+
+nav.horizontal a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(68, 152, 173);
+}
+
+nav a:link,
+nav a:visited {
+    color: rgb(224, 244, 243);
+}
+
+nav a:hover,
+nav a:active {
+    color: rgb(100, 160, 209);
 }
 
 /* Article Styles */
-
-/* Section Styles */
